@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CB14 Arts Photography — L'Art au bout de l'objectif</title>
+  <meta name="description" content="Je suis CB14 — Corneil Banidje, photographe professionnel, graphiste et sérigraphe basé à Abomey-Calavi, Bénin." />
+  <meta name="keywords" content="CB14, Corneil Banidje, photographe bénin, sérigraphie, tableaux portrait, graphisme, événementiel, Abomey-Calavi, Banté" />
+  <meta name="author" content="Corneil Banidje — CB14 Arts Photography" />
+  <meta property="og:title"       content="CB14 Arts Photography — L'Art au bout de l'objectif" />
+  <meta property="og:description" content="Photographe professionnel, graphiste & sérigraphe à Abomey-Calavi. Je transforme vos idées en œuvres d'art." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%230A0A0A'/><text y='74' x='6' font-size='60' font-family='serif' font-weight='700' fill='%23D4A843'>CB</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+  <!-- ✅ UN SEUL fichier CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"  id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+  </div>
+
+  <!-- Loader de page -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-logo">CB<span>14</span></div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <p class="loader-txt">L'Art au bout de l'objectif</p>
+    </div>
+  </div>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="nl-cb">CB</span><span class="nl-num">14</span>
+      <sub>Arts Photography</sub>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Avis</a></li>
+      <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation">
+    <button class="mobile-menu-close" id="mobileClose" aria-label="Fermer">✕</button>
+    <a href="#about"        onclick="closeMobile()">À propos</a>
+    <a href="#services"     onclick="closeMobile()">Services</a>
+    <a href="#portfolio"    onclick="closeMobile()">Portfolio</a>
+    <a href="#testimonials" onclick="closeMobile()">Témoignages</a>
+    <a href="#contact"      onclick="closeMobile()" class="mm-cta">Me contacter</a>
+    <div class="mm-socials">
+      <a href="https://wa.me/2290196987967" target="_blank" class="mm-social-link">WhatsApp</a>
+      <span>·</span>
+      <a href="mailto:corneilbanidje@gmail.com" class="mm-social-link">Email</a>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SECTIONS — Chaque section dans son propre fichier
+       Modifiez uniquement sections/nom-section.html
+       pour mettre à jour le contenu correspondant.
+  ===================================================== -->
+
+  <!-- sections/hero.html -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Abomey-Calavi · Bénin 🇧🇯 · Disponible maintenant
+      </div>
+      <h1 class="hero-logo-text">
+        <span class="cb">CB</span><span class="num">14</span> <span class="arts">Arts</span>
+      </h1>
+      <p class="hero-sub">Photography &amp; Creative Studio</p>
+      <p class="hero-slogan">« L'Art au bout de l'objectif »</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-primary">
+          <span>Voir mon portfolio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline">Travailler avec moi</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num" data-count="500">0+</div><div class="stat-label">Projets réalisés</div></div>
+      <div class="stat-item"><div class="stat-num" data-count="6">0+</div><div class="stat-label">Ans d'expérience</div></div>
+      <div class="stat-item"><div class="stat-num" data-count="100">0%</div><div class="stat-label">Satisfaction client</div></div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><div class="hero-scroll-line"></div><span>Défiler</span></div>
+  </section>
+
+  <!-- sections/about.html -->
+  <section id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-img-wrap reveal-l">
+          <div class="about-img-accent"></div>
+          <div class="about-img-accent2"></div>
+          <img
+            src="assets/photo-about.jpg"
+            onerror="this.src='https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=700&q=80'"
+            alt="CB14 — Corneil Banidje, photographe et artiste béninois"
+            class="about-img" loading="eager"
+          />
+          <div class="about-tag">
+            <strong>CB14</strong>
+            <span>Corneil Banidje · Artiste &amp; Photographe</span>
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-num">6+</span>
+            <span class="exp-txt">Ans<br/>d'exp.</span>
+          </div>
+        </div>
+        <div class="about-text reveal-r">
+          <div class="section-label">Qui suis-je ?</div>
+          <h2 class="section-title">Je suis <em>CB14</em>,<br/>Corneil Banidje</h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">
+            Originaire de <strong class="accent">Banté</strong> et établi à
+            <strong class="accent">Abomey-Calavi</strong>, je suis un artiste créatif béninois
+            passionné par l'image sous toutes ses formes. Depuis plus de 6 ans, je mets
+            mon objectif et ma créativité au service de ceux qui veulent laisser une trace,
+            raconter leur histoire, ou simplement se démarquer.
+          </p>
+          <p class="section-desc" style="margin-top:.9rem">
+            Photographe professionnel, graphiste, sérigraphe et entrepreneur événementiel —
+            je ne fais pas que prendre des photos :
+            <em style="color:var(--gold-lt)">je crée des émotions.</em>
+            Disponible <strong>24h/24 · 7j/7</strong>, je me déplace partout au Bénin.
+          </p>
+          <div class="about-skills">
+            <span class="skill-chip">📸 Photo Pro</span>
+            <span class="skill-chip">👕 Sérigraphie</span>
+            <span class="skill-chip">🖼️ Tableaux Portrait</span>
+            <span class="skill-chip">🎨 Graphisme</span>
+            <span class="skill-chip">🎬 Création Contenu</span>
+            <span class="skill-chip">🎪 Événementiel</span>
+            <span class="skill-chip">📱 Social Media</span>
+            <span class="skill-chip">🎯 Branding</span>
+          </div>
+          <blockquote class="about-quote">
+            « Je ne fais pas que capturer un moment —<br/>
+            je lui donne une âme, pour qu'il vive éternellement. »
+            <cite>— CB14</cite>
+          </blockquote>
+          <a href="#contact" class="btn-primary" style="display:inline-flex;margin-top:2.2rem;gap:.5rem">
+            <span>Démarrons votre projet</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sections/services.html -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label">Ce que je fais</div>
+        <h2 class="section-title">Mes <em>créations</em><br/>pour vous</h2>
+        <div class="gold-divider"></div>
+        <p class="section-desc">Chaque prestation est réalisée avec le même niveau d'exigence : je mets tout mon art dans chaque commande, petite ou grande.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" style="--delay:0s">
+          <div class="service-icon">📸</div><div class="service-badge">Le plus demandé</div>
+          <div class="service-name">Photographie Professionnelle</div>
+          <p class="service-desc">Je capture vos plus beaux moments avec précision artistique. Portraits, événements, mode, corporate — retouches incluses, livré HD.</p>
+          <ul class="service-list"><li>Portraits individuels &amp; famille</li><li>Mariages &amp; cérémonies</li><li>Mode &amp; lookbook</li><li>Corporate &amp; produits</li></ul>
+          <a href="#contact" class="btn-service">Commander <span>→</span></a>
+        </div>
+        <div class="service-card" style="--delay:.08s">
+          <div class="service-icon">👕</div>
+          <div class="service-name">Sérigraphie &amp; Impression</div>
+          <p class="service-desc">T-shirts, Lacoste, maillots, banderoles, plastiques — j'imprime vos designs avec des couleurs intenses et une durabilité maximale.</p>
+          <ul class="service-list"><li>T-shirt &amp; Lacoste</li><li>Maillots de sport</li><li>Banderoles &amp; affiches</li><li>Plastique &amp; supports variés</li></ul>
+          <a href="#contact" class="btn-service">Commander <span>→</span></a>
+        </div>
+        <div class="service-card" style="--delay:.16s">
+          <div class="service-icon">🖼️</div>
+          <div class="service-name">Tableaux Portrait</div>
+          <p class="service-desc">Je transforme votre photo en œuvre d'art unique. Toile, mat encadré ou plexiglas brillant — le cadeau qui impressionne pour toujours.</p>
+          <ul class="service-list"><li>Toile canvas standard &amp; XL</li><li>Mat encadré premium</li><li>Plexiglas haute brillance</li><li>Tous formats sur mesure</li></ul>
+          <a href="#contact" class="btn-service">Commander <span>→</span></a>
+        </div>
+        <div class="service-card" style="--delay:.24s">
+          <div class="service-icon">🎬</div>
+          <div class="service-name">Création de Contenu</div>
+          <p class="service-desc">Je crée vos visuels pour les réseaux sociaux, vos affiches publicitaires et votre identité visuelle complète pour vous démarquer.</p>
+          <ul class="service-list"><li>Posts &amp; stories Instagram/Facebook</li><li>Flyers &amp; affiches événements</li><li>Identité visuelle &amp; logo</li><li>Campagnes publicitaires</li></ul>
+          <a href="#contact" class="btn-service">Commander <span>→</span></a>
+        </div>
+        <div class="service-card" style="--delay:.32s">
+          <div class="service-icon">🎪</div>
+          <div class="service-name">Événementiel</div>
+          <p class="service-desc">Je couvre votre événement de A à Z avec discrétion et professionnalisme. Mariages, galas, concerts — je garde vos souvenirs vivants.</p>
+          <ul class="service-list"><li>Mariages &amp; fiançailles</li><li>Galas &amp; cérémonies officielles</li><li>Concerts &amp; spectacles</li><li>Conférences &amp; lancements</li></ul>
+          <a href="#contact" class="btn-service">Commander <span>→</span></a>
+        </div>
+        <div class="service-card service-card--featured" style="--delay:.4s">
+          <div class="service-icon">✨</div><div class="service-badge service-badge--gold">Sur mesure</div>
+          <div class="service-name">Pack Complet / Sur Mesure</div>
+          <p class="service-desc">Grand projet ? Je vous accompagne de la conception à la livraison. Combinez plusieurs services et bénéficiez d'un tarif avantageux.</p>
+          <ul class="service-list"><li>Devis personnalisé gratuit</li><li>Combinaison libre de services</li><li>Suivi et accompagnement complet</li><li>Réduction sur les packs</li></ul>
+          <a href="#contact" class="btn-service btn-service--gold">Demander mon devis <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sections/portfolio.html -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div class="reveal">
+          <div class="section-label">Mon portfolio</div>
+          <h2 class="section-title">Des travaux qui<br/><em>parlent pour moi</em></h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">Chaque image ici est le résultat d'une vraie collaboration avec un client. C'est ma fierté, c'est mon travail.</p>
+        </div>
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">Tout voir</button>
+          <button class="filter-btn" data-filter="photo">Photos</button>
+          <button class="filter-btn" data-filter="serigraphie">Sérigraphie</button>
+          <button class="filter-btn" data-filter="tableau">Tableaux</button>
+          <button class="filter-btn" data-filter="graphisme">Graphisme</button>
+        </div>
+      </div>
+      <!-- ======================================================
+           Pour ajouter vos vraies photos :
+           1. Placez vos images dans le dossier  assets/
+           2. Remplacez  src="assets/portfolio-XX.jpg"
+           3. Éditez data-title et data-sub selon votre photo
+           Les  onerror="..."  sont des photos de secours temporaires
+      ======================================================= -->
+      <div class="masonry" id="galleryGrid">
+        <div class="masonry-item" data-cat="photo" data-title="Portrait studio" data-sub="Photo · Portrait">
+          <img src="assets/portfolio-01.jpg" onerror="this.src='https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80'" alt="Portrait studio" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Photo Portrait</div><div class="masonry-overlay-text">Portrait artistique — Studio</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="photo" data-title="Portrait masculin" data-sub="Photo · Cinématique">
+          <img src="assets/portfolio-02.jpg" onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80'" alt="Portrait masculin" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Photo Portrait</div><div class="masonry-overlay-text">Portrait cinématique — Outdoor</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="photo" data-title="Mode africaine" data-sub="Photo · Fashion">
+          <img src="assets/portfolio-03.jpg" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=80'" alt="Mode africaine" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Photo Mode</div><div class="masonry-overlay-text">Fashion africaine — Lookbook</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="serigraphie" data-title="T-shirt premium" data-sub="Sérigraphie · Impression">
+          <img src="assets/portfolio-04.jpg" onerror="this.src='https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&q=80'" alt="T-shirt sérigraphie" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Sérigraphie</div><div class="masonry-overlay-text">T-shirt — Impression premium</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="tableau" data-title="Portrait sur toile" data-sub="Tableau · Art">
+          <img src="assets/portfolio-05.jpg" onerror="this.src='https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80'" alt="Tableau toile" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Tableau Toile</div><div class="masonry-overlay-text">Portrait sur toile — Œuvre unique</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="photo" data-title="Shooting outdoor" data-sub="Photo · Mode">
+          <img src="assets/portfolio-06.jpg" onerror="this.src='https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600&q=80'" alt="Shooting outdoor" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Photo Mode</div><div class="masonry-overlay-text">Shooting Mode — Plein air</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="graphisme" data-title="Identité visuelle" data-sub="Graphisme · Branding">
+          <img src="assets/portfolio-07.jpg" onerror="this.src='https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80'" alt="Graphisme identité" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Graphisme</div><div class="masonry-overlay-text">Identité visuelle — Branding</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="tableau" data-title="Plexiglas luxe" data-sub="Tableau · Plexiglas">
+          <img src="assets/portfolio-08.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'" alt="Tableau plexiglas" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Tableau Plexiglas</div><div class="masonry-overlay-text">Portrait plexiglas — Luxe &amp; brillance</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="serigraphie" data-title="Maillot sport" data-sub="Sérigraphie · Équipe">
+          <img src="assets/portfolio-09.jpg" onerror="this.src='https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&q=80'" alt="Maillot sport" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Sérigraphie Sport</div><div class="masonry-overlay-text">Maillot équipe — Impression sportive</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="photo" data-title="Mariage" data-sub="Photo · Événementiel">
+          <img src="assets/portfolio-10.jpg" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80'" alt="Mariage reportage" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Photo Événement</div><div class="masonry-overlay-text">Mariage — Reportage complet</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="graphisme" data-title="Affiche événement" data-sub="Graphisme · Print">
+          <img src="assets/portfolio-11.jpg" onerror="this.src='https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&q=80'" alt="Affiche graphisme" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Graphisme Print</div><div class="masonry-overlay-text">Affiche événement — Design print</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+        <div class="masonry-item" data-cat="tableau" data-title="Portrait mat encadré" data-sub="Tableau · Mat">
+          <img src="assets/portfolio-12.jpg" onerror="this.src='https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80'" alt="Tableau mat" loading="lazy"/>
+          <div class="masonry-overlay"><div class="masonry-overlay-cat">Tableau Mat</div><div class="masonry-overlay-text">Portrait mat — Format encadré</div><div class="masonry-zoom">🔍</div></div>
+        </div>
+      </div>
+      <div class="portfolio-cta reveal">
+        <p>Vous aimez ce que vous voyez ? Discutons de votre projet.</p>
+        <a href="#contact" class="btn-primary" style="display:inline-flex;gap:.5rem">
+          <span>Commander une réalisation</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (liée à la section portfolio) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Précédent">‹</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt=""/>
+      <div class="lightbox-caption">
+        <div class="lb-title" id="lbTitle"></div>
+        <div class="lb-sub"   id="lbSub"></div>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Suivant">›</button>
+  </div>
+
+  <!-- sections/testimonials.html -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:3rem">
+        <div class="section-label">Ce qu'ils disent de moi</div>
+        <h2 class="section-title">Mes clients témoignent,<br/><em>et ça me touche</em></h2>
+        <div class="gold-divider"></div>
+        <p class="section-desc">Rien ne me rend plus fier que la satisfaction de ceux qui me font confiance.</p>
+      </div>
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">CB14 a couvert notre mariage comme un vrai artiste. Chaque photo raconte quelque chose de profond. Nos invités n'arrêtent pas de demander le nom du photographe !</p><div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=47" alt="Aminata" loading="lazy"/><div><div class="testi-name">Aminata &amp; Kofi Mensah</div><div class="testi-role">Mariage — Cotonou</div></div></div></div>
+          <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">On a commandé 50 T-shirts pour notre association. Corneil a tout géré avec sérieux, les couleurs sont parfaites et la qualité d'impression est au-dessus de tout. Bravo !</p><div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=12" alt="Jean-Baptiste" loading="lazy"/><div><div class="testi-name">Jean-Baptiste Houénou</div><div class="testi-role">Sérigraphie — Parakou</div></div></div></div>
+          <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Mon tableau sur plexiglas est une merveille. Chaque fois que des visiteurs entrent dans mon salon, ils s'arrêtent devant. CB14 a su capturer exactement ce que je voulais.</p><div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=32" alt="Grâce" loading="lazy"/><div><div class="testi-name">Grâce Ahoussou</div><div class="testi-role">Tableau Plexiglas — Abomey</div></div></div></div>
+          <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">CB14 a créé notre identité visuelle de A à Z. Notre marque est maintenant reconnaissable partout. C'est professionnel, créatif, livré à temps. Je ne travaille qu'avec lui.</p><div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=68" alt="Moussa" loading="lazy"/><div><div class="testi-name">Moussa Traoré</div><div class="testi-role">Branding — Porto-Novo</div></div></div></div>
+          <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Notre gala d'entreprise couvert par CB14 — le résultat est bluffant. Des photos dignes d'un magazine international. Notre direction a adoré. Il sera à tous nos événements.</p><div class="testi-author"><img class="testi-avatar" src="https://i.pravatar.cc/80?img=55" alt="Fatou" loading="lazy"/><div><div class="testi-name">Fatou Diallo</div><div class="testi-role">Événementiel — Cotonou</div></div></div></div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev" aria-label="Précédent">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Suivant">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- sections/contact.html -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="reveal-l">
+          <div class="section-label">Me contacter</div>
+          <h2 class="section-title">Parlons de<br/><em>votre projet</em></h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">Que ce soit pour une photo, un T-shirt, un tableau ou un événement — je suis disponible <strong>24h/24, 7j/7</strong>. Je réponds toujours rapidement.</p>
+          <div class="contact-items">
+            <a href="mailto:corneilbanidje@gmail.com" class="contact-item"><div class="contact-icon">📧</div><div class="contact-detail"><strong>Mon email</strong><span>corneilbanidje@gmail.com</span></div></a>
+            <a href="https://wa.me/2290196987967" target="_blank" class="contact-item"><div class="contact-icon">💬</div><div class="contact-detail"><strong>WhatsApp</strong><span>Je réponds en moins de 2h · 24h/24</span></div></a>
+            <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-detail"><strong>Où je suis</strong><span>Abomey-Calavi, Bénin · Originaire de Banté<br/>Déplacements possibles partout au Bénin</span></div></div>
+            <div class="contact-item"><div class="contact-icon">⏰</div><div class="contact-detail"><strong>Mes horaires</strong><span>Toujours disponible · 7j/7 · 24h/24</span></div></div>
+          </div>
+          <a href="https://wa.me/2290196987967?text=Bonjour%20CB14%20!%20Je%20souhaite%20commander%20un%20service.%20Pouvez-vous%20m%27aider%20%3F" target="_blank" class="wa-direct-btn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 1C5.925 1 1 5.925 1 12c0 2.121.559 4.112 1.533 5.836L1 23l5.354-1.51A10.935 10.935 0 0012 23c6.075 0 11-4.925 11-11S18.075 1 11.999 1zm0 20c-1.906 0-3.682-.527-5.19-1.44l-.37-.22-3.18.896.878-3.112-.239-.386A8.95 8.95 0 013 12c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9z"/></svg>
+            Me contacter sur WhatsApp maintenant
+          </a>
+        </div>
+        <div class="order-form reveal-r">
+          <div class="form-title">Formulaire de Commande</div>
+          <div class="form-sub">Remplissez ce formulaire — je vous recontacte directement sur WhatsApp sous 2h.</div>
+          <form id="orderForm" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="f-nom">Votre nom complet *</label><input type="text" id="f-nom" name="nom" placeholder="Nom et prénom" required autocomplete="name"/><span class="form-error" id="err-nom"></span></div>
+              <div class="form-group"><label for="f-tel">Téléphone / WhatsApp *</label><input type="tel" id="f-tel" name="tel" placeholder="+229 00 00 00 00" required autocomplete="tel"/><span class="form-error" id="err-tel"></span></div>
+            </div>
+            <div class="form-group"><label for="f-email">Email (facultatif)</label><input type="email" id="f-email" name="email" placeholder="votre@email.com" autocomplete="email"/></div>
+            <div class="form-group">
+              <label for="f-service">Quel service souhaitez-vous ? *</label>
+              <select id="f-service" name="service" required>
+                <option value="" disabled selected>Choisissez un service...</option>
+                <option value="photo">📸 Photographie professionnelle</option>
+                <option value="seri">👕 Sérigraphie (T-shirt, Lacoste, Maillot, Banderole...)</option>
+                <option value="tableau">🖼️ Tableau portrait (Toile, Mat, Plexiglas)</option>
+                <option value="contenu">🎬 Création de contenu / Graphisme</option>
+                <option value="event">🎪 Événementiel (Mariage, Gala, Concert...)</option>
+                <option value="pack">✨ Pack complet / Sur mesure</option>
+              </select>
+              <span class="form-error" id="err-service"></span>
+            </div>
+            <div class="form-group"><label for="f-desc">Décrivez votre projet *</label><textarea id="f-desc" name="desc" placeholder="Donnez-moi le maximum de détails : lieu, date, nombre de personnes, vos attentes..." required></textarea><span class="form-error" id="err-desc"></span></div>
+            <div class="form-row">
+              <div class="form-group"><label for="f-budget">Budget estimé</label><select id="f-budget" name="budget"><option value="" disabled selected>Votre budget...</option><option>Moins de 5 000 FCFA</option><option>5 000 – 15 000 FCFA</option><option>15 000 – 50 000 FCFA</option><option>50 000 – 100 000 FCFA</option><option>Plus de 100 000 FCFA</option><option>À définir ensemble</option></select></div>
+              <div class="form-group"><label for="f-date">Date souhaitée</label><input type="date" id="f-date" name="date"/></div>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span id="submitTxt">Envoyer ma commande</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p id="formMsg" class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sections/footer.html -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">CB<span>14</span> Arts</div>
+          <p class="footer-desc">Je suis CB14 — photographe professionnel, graphiste &amp; sérigraphe basé à Abomey-Calavi. Je transforme vos idées en œuvres d'art, partout au Bénin.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://wa.me/2290196987967" target="_blank" class="social-btn" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 1C5.925 1 1 5.925 1 12c0 2.121.559 4.112 1.533 5.836L1 23l5.354-1.51A10.935 10.935 0 0012 23c6.075 0 11-4.925 11-11S18.075 1 11.999 1zm0 20c-1.906 0-3.682-.527-5.19-1.44l-.37-.22-3.18.896.878-3.112-.239-.386A8.95 8.95 0 013 12c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9z"/></svg></a>
+            <a href="mailto:corneilbanidje@gmail.com" class="social-btn" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><ul class="footer-links"><li><a href="#about">À propos</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#testimonials">Témoignages</a></li><li><a href="#contact">Me contacter</a></li></ul></div>
+        <div class="footer-col"><h4>Mes services</h4><ul class="footer-links"><li><a href="#contact">Photographie Pro</a></li><li><a href="#contact">Sérigraphie</a></li><li><a href="#contact">Tableaux Portrait</a></li><li><a href="#contact">Création Contenu</a></li><li><a href="#contact">Événementiel</a></li></ul></div>
+        <div class="footer-col"><h4>Me joindre</h4><ul class="footer-links"><li><a href="mailto:corneilbanidje@gmail.com">corneilbanidje@gmail.com</a></li><li><a href="https://wa.me/2290196987967" target="_blank">WhatsApp 24h/24</a></li><li><span>Abomey-Calavi, Bénin</span></li><li><span>Originaire de Banté</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© <span class="footer-year">2025</span> <span>CB14 Arts Photography</span> · Corneil Banidje — Tous droits réservés</div>
+        <div class="footer-loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Banté · Abomey-Calavi · Bénin 🇧🇯</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a href="https://wa.me/2290196987967?text=Bonjour%20CB14%20!%20Je%20souhaite%20commander%20un%20service.%20Pouvez-vous%20m%27aider%20%3F"
+     target="_blank" class="wa-float" id="waFloat" aria-label="WhatsApp CB14">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 1C5.925 1 1 5.925 1 12c0 2.121.559 4.112 1.533 5.836L1 23l5.354-1.51A10.935 10.935 0 0012 23c6.075 0 11-4.925 11-11S18.075 1 11.999 1zm0 20c-1.906 0-3.682-.527-5.19-1.44l-.37-.22-3.18.896.878-3.112-.239-.386A8.95 8.95 0 013 12c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9z"/></svg>
+    <div class="wa-tooltip">Me contacter sur WhatsApp</div>
+    <div class="wa-pulse"></div>
+  </a>
+
+  <!-- Retour en haut -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <!-- ✅ UN SEUL fichier JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
